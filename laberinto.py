@@ -117,7 +117,7 @@ class JuegoArchivo(Juego):
         self.jugar()
 
 def main():
-    path_a_mapas = "carpeta_de_mapas"  
+    path_a_mapas = "carpeta_mapas"  
     juego_archivo = JuegoArchivo(path_a_mapas)
     
     Jugador = input("Ingresa tu Nombre oara jugar: ")

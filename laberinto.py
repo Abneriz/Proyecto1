@@ -1,6 +1,7 @@
 import random
 import os
 from readchar import readkey, key
+from functools import reduce
 
 class Juego:
     def __init__(self, cadena_mapa, posicion_inicial, posicion_final):
@@ -59,12 +60,16 @@ class Juego:
         for fila in self.matriz_laberinto:
             print("".join(fila))
 
+    def convertir_a_matriz(self, laberinto_str):
+        return list(map(list, laberinto_str("\n")))        
+
 class JuegoArchivo(Juego):
     def __init__(self, path_a_mapas):
         self.path_a_mapas = path_a_mapas
 
     def leer_mapa(self, nombre_archivo):
         path_completo = os.path.join(self.path_a_mapas, nombre_archivo)
+       
 
         try:
             with open(path_completo, 'r') as file:
@@ -76,7 +81,9 @@ class JuegoArchivo(Juego):
             # Separar las líneas del archivo
             lineas = contenido.strip().splitlines()
             print("Líneas:")
-            print(lineas)
+            print(lineas)  
+
+            mapa = reduce(lambda x,y:x + y,lineas[2], "").strip()
 
             # Verificar que las coordenadas tengan el formato correcto
             if len(lineas) < 3 or ',' not in lineas[0] or ',' not in lineas[1]:
@@ -155,7 +162,7 @@ def main():
 
         elif k == 'n':
             juego_archivo.borrar_terminal()
-            print(f"Número actual: {numero}")
+            print(f"Manten precionado N: {numero}")
             numero += 1
             if numero > 50:
                 numero = 0

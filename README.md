@@ -21,3 +21,7 @@
 5.1 las funciones fueron encapsuladas en la clase Juego
 
 5.2 El mapa es llamado de un archivo .txt
+
+6.1 Se reescribio la funcion que convierte el laberinto en cadena matriz
+
+6.2 Se reescribio la funcion que lee el mapa usando "readlines"

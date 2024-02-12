@@ -21,7 +21,7 @@ Este proyecto consiste en un juego de laberinto desarrollado en Python, donde el
 1. **Clonar el Repositorio:** Clona el repositorio en tu máquina local.
 
 ```bash
-git clone https://github.com/Abneriz/Laberinto.git
+git clone https://github.com/Abneriz/Proyecto1.git
 ```
 
 1 **Instalar Dependencias:** Instala las dependencias requeridas ejecutando el siguiente comando en la terminal:

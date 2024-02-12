@@ -1,27 +1,54 @@
-# Descripcion del proyecto integrador
+# README - Juego de Laberinto
 
-1.1 El Jugador se define mediante variable "Jugador"
+Este proyecto consiste en un juego de laberinto desarrollado en Python, donde el jugador debe mover un personaje (representado por 'P') desde una posición inicial hasta una posición final ('F') evitando obstáculos ('#'). El jugador puede mover al personaje utilizando las teclas de dirección.
 
-1.2 Se le indica al jugador escribir su nombre antes de empezar mediante el comando "input"
+## Funcionalidades
 
-1.3 Se da un mensaje de bienvenida
+- **Movimiento del Personaje:** El jugador puede mover el personaje hacia arriba, abajo, izquierda o derecha utilizando las teclas de dirección.
+- **Generación Aleatoria de Laberintos:** El juego puede cargar laberintos aleatorios desde archivos de mapa en una carpeta específica.
+- **Jugabilidad Interactiva:** El juego proporciona una interfaz interactiva donde el jugador puede moverse por el laberinto y completarlo.
+- **Contador de Números:** Presionando la tecla 'N', se activa un contador que suma números mientras la tecla esté presionada.
+- **Mensajes de Estado:** El juego proporciona mensajes de estado al jugador, como bienvenida, indicaciones para comenzar y felicitaciones al completar el laberinto.
 
-2.1 Se importa la libreria "Readchar"
+## Requisitos
 
-2.2 Se le pide imprimir cualquier tecla en bucle y que finalice al presionar la tecla UP
+- Python 3.x
+- Librería `readchar`
+- Sistema Operativo: Windows o Unix (Linux/macOS)
 
-3.1 Se presiona la tecla "N" con un bucle que inicia desde 0 y termina al llegar al 50
+## Instrucciones de Uso
 
-4.1 Precionando la tecla UP se imprime el laberinto
+1. **Clonar el Repositorio:** Clona el repositorio en tu máquina local.
 
-4.2 Se agregan coordenadas y movimiento al Jugador "P"
+```bash
+git clone https://github.com/Abneriz/Laberinto.git
+```
 
-4.3 Se agrega el mensaje al finalizar el laberinto
+1 **Instalar Dependencias:** Instala las dependencias requeridas ejecutando el siguiente comando en la terminal:
 
-5.1 las funciones fueron encapsuladas en la clase Juego
+```bash
+pip install readchar
+```
 
-5.2 El mapa es llamado de un archivo .txt
+1. **Ejecutar el Juego:** Ejecuta el script principal `laberinto.py` para iniciar el juego.
 
-6.1 Se reescribio la funcion que convierte el laberinto en cadena matriz
+```bash
+python laberinto.py
+```
 
-6.2 Se reescribio la funcion que lee el mapa usando "readlines"
+1. **Jugar:** Sigue las instrucciones en pantalla para mover al personaje por el laberinto y completarlo.
+
+## Estructura del Proyecto
+
+El proyecto está organizado de la siguiente manera:
+
+- **laberinto.py:** Contiene el código principal del juego.
+- **carpeta_mapas/:** Carpeta que contiene archivos de mapas de laberintos.
+- **README.md:** Este archivo que proporciona información sobre el juego y cómo usarlo.
+
+## Notas Adicionales
+
+- Asegúrate de tener los permisos necesarios para ejecutar scripts en tu sistema operativo.
+- Puedes agregar tus propios mapas de laberinto en la carpeta `carpeta_mapas/` siguiendo el formato especificado en el código.
+
+¡Disfruta del juego y buena suerte en la aventura del laberinto! 🎮🔍.
